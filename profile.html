@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- *****HEADER SECTION***** -->
+    <header class="header">
+        <!-- <nav class="navbar navbar-style">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#"><img class="logo" src="images/logo.png" alt="LOGO" width="60px" height="32px"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li>
+                            <a href="#"><img src="images/cart.png" alt="CART"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img class="logo" src="images/logo23.png" alt="LOGO" width="80px" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menuitems">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <!-- <a class="nav-link disabled" href="">Sigin/Signup</a> -->
+                    <button class="btn btn-secondary" onclick="logout()" type="button" id="logout">
+                              Logout
+                            </button>
+                    <li class="nav-item">
+                        <a href="#"><img class="cart" src="images/cart.png" alt="CART"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SLIDER SECTION -->
+    <div id="CarouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#CarouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#CarouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#CarouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg" alt="...">
+                <div class="carousel-caption d-none  d-md-block">
+                    <h4>Food Chahiye?</h4>
+                    <p>Explore The New Taste</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="images/front-view-delicious-vegetable-salad-inside-tray-grey-table.jpg " alt="... ">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h4>Food Chahiye ?</h4>
+                    <p>Explore The New Taste</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="images/top-view-vegetable-salad-with-fresh-vegetables-grey-health-diet-food-salad.jpg " alt="... ">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h4>Food Chahiye?</h4>
+                    <p>Explore The New Taste</p>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control " href="# " role="button " data-slide="prev ">
+                <span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span>
+                <span class="sr-only ">Previous</span>
+            </a>
+            <a class="right carousel-control " href="# " role="button " data-slide="next ">
+                <span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>
+                <span class="sr-only ">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- **********RESTAURANT SECTION********** -->
+    <div class="container">
+        <h2 class="heading">Yeh Restaurant</h2>
+        <h4 class="choose-heading">Try Karoge?</h4>
+        <div class="row" id="row">
+            <div class="card col-sm-7 col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="images/restaurant-interior.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Mc'Donald</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary rest-btn">Go In The Restaurant</a>
+                </div>
+            </div>
+            <div class="card col-sm-7 col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="images/hamburgers-with-fries-cup-sauce-wooden-tray.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">KFC</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary rest-btn">Go In The Restaurant</a>
+                </div>
+            </div>
+            <div class="card col-sm-7 col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="images/restaurant-interior.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Kabajee's</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary rest-btn">Go In The Restaurant</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **********FACILITY****** -->
+    <div class="container facility" id="service">
+        <h2 class="heading">Why You Choose</h2>
+        <h4 class="choose-heading">Khana Mangwao?</h4>
+        <div class="cards">
+            <div class="card1">
+                <img src="images/icon2.png">
+                <h5>Various Menus</h5>
+                <p>Etiam feugiat eleifend est, odio<br> tempor vitaeVivamus maximus<br> scelerisque ipsum nec commodo.
+                </p>
+            </div>
+            <div class="card1">
+                <img src="images/icon.png">
+                <h5>Pocket Friendly delivery</h5>
+                <p>Etiam feugiat eleifend est, odio<br> tempor vitaeVivamus maximus<br> scelerisque ipsum nec commodo.
+                </p>
+            </div>
+            <div class="card1">
+                <img src="images/icon3.png">
+                <h5>Best offers</h5>
+                <p>Etiam feugiat eleifend est, odio<br> tempor vitaeVivamus maximus<br> scelerisque ipsum nec commodo.
+                </p>
+            </div>
+            <div class="card1">
+                <img src="images/icon2.png">
+                <h5>Buisness Oportunity</h5>
+                <p>Etiam feugiat eleifend est, odio<br> tempor vitaeVivamus maximus<br> scelerisque ipsum nec commodo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************ITEMS -->
+
+    <div class="container">
+        <div id="menuitems">
+            <h2 class="heading ">Tasty Items</h2>
+            <h4 class="choose-heading ">Order From Your Favourite restaurant</h4>
+            <div class="row ">
+                <div class="card col-sm-7 col-md-3 " style="width: 18rem; ">
+                    <img class="card-img-top " src="images/depositphotos_50523105-stock-photo-pizza-with-tomatoes.jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Spicy Pizza</h5>
+                        <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>Price: <span id="pizzaPrice">250</span></p>
+                        <a href="# " class="btn btn-primary rest-btn " onclick="orderNow (e)">Order Now</a>
+                    </div>
+                </div>
+                <div class="card col-sm-7 col-md-3 " style="width: 18rem; ">
+                    <img class="card-img-top " src="images/download.jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Jab Burger</h5>
+                        <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>Price: <span id="burgPrice">250</span></p>
+                        <a href="# " class="btn btn-primary rest-btn " onclick="orderNow (e)">Order Now</a>
+                    </div>
+                </div>
+                <div class="card col-sm-7 col-md-3 " style="width: 18rem; ">
+                    <img class="card-img-top " src="images/istockphoto-1177886278-612x612.jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Grilled Chicken</h5>
+                        <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>Price: <span id="chickenPrice">250</span></p>
+                        <a href="# " class="btn btn-primary rest-btn " onclick="orderNow (e)">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *****FOOTER SECTION***** -->
+
+    <div class=" footer-dark ">
+        <footer>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>Services</h3>
+                        <ul>
+                            <li> <a href="# ">Fast Delivery</a> </li>
+                            <li>
+                                <a href="# ">Trusted Rider</a>
+                            </li>
+                            <li>
+                                <a href="# ">Extra Discount</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>About</h3>
+                        <ul>
+                            <li>
+                                <a href="# ">Trusted Rider</a>
+                            </li>
+                            <li>
+                                <a href="# ">Top Restaurants</a>
+                            </li>
+                            <li>
+                                <a href="# ">Avail Offers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text ">
+                        <a class="navbar-brand " href="# "><img class="logo company " src="images/logo23.png " alt="LOGO " width="80px " height="50px "></a>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social "><a href="# "><i class="icon ion-social-facebook "></i></a><a href="# "><i class="icon ion-social-twitter "></i></a><a href="# "><i class="icon ion-social-snapchat "></i></a><a href="# "><i class="icon
+                            ion-social-instagram "></i></a></div>
+                </div>
+                <p class="copyright ">Company Name © 2021</p>
+            </div>
+        </footer>
+    </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCubkOWJfdWEr9ceihosKKmSth__DCNdjk",
+    authDomain: "hackathon-42129.firebaseapp.com",
+    projectId: "hackathon-42129",
+    storageBucket: "hackathon-42129.appspot.com",
+    messagingSenderId: "1020141657474",
+    appId: "1:1020141657474:web:1d3aa39d088cd5503f039b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script src="app.js "></script>
+    <script src="restaurant.js "></script>
+
+</body>
+
+</html>
