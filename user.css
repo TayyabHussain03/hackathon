@@ -1,0 +1,101 @@
+body{
+    background: url(images/top-view-vegetable-salad-with-fresh-vegetables-grey-health-diet-food-salad.jpg);
+    background-size: cover;
+}
+
+.alert {
+    margin-top: 10px !important;
+}
+
+.main {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.form-control-file{
+    border: none
+}
+.form-control-file:hover{
+    border: none;
+}
+
+.form-control-file:focus{
+    border: none
+}
+
+input {
+    width: 100%;
+    border-radius: 100px;
+    padding: 10px;
+    border: 2px solid rgb(221, 221, 221);
+}
+
+input:hover {
+    border-bottom: 2px solid #f1ae31;
+}
+
+input:focus {
+    border: 2px solid #f1ae31;
+}
+
+textarea:focus {
+    border: none
+}
+
+input:focus {
+    outline: none;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #f1ae31;
+    color: white;
+    border: none;
+    border: 1px solid;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.spinner-border {
+    width: 150px;
+    height: 150px;
+}
+
+.file {
+    border: none;
+}
+
+.file:hover {
+    border-bottom: none;
+}
+
+select{
+    width: 100%;
+    border:1px solid #f1ae31;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #f1ae31;
+}
